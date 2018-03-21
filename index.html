@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Breaking Game</title>
+  <meta charset="utf-8">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="all" href="assets/css/reset.css">
+  <link rel="stylesheet" media="all" href="assets/css/style.css">
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+		
+</head>
+
+<body>
+
+  <header>
+    <h1>Code Breaker</h1>
+  </header>
+  <div class="rules">
+    <p>LOGIN(1)</p>
+    <p>An access code will be displayed upon logging in...</p>
+    <p>The are four keys below the access code. Click on a key to add a specific number to the terminal...</p>
+    <p>You can access the database by matching the number in the terminal to the access code...</p>
+    <p>You will be denied access if the number is greater than the access code</p>
+    <p>The number of each key is encrypted until you click on it...</p>
+    <p>The keys are regenerated on each login.</p> 
+    <p>(END)</p>
+  </div>
+  <div class="main">
+  <div class="code"></div>
+
+  <div class="score">
+  Accessed:<div id="access">0</div>
+  Denied:<div id="denied">0</div>
+  </div>
+
+  <div class="keys">
+    <img src="assets/images/one.png" class="click" id="one">
+    <img src="assets/images/two.png" class="click" id="two">
+    <img src="assets/images/three.png" class="click" id="three">
+    <img src="assets/images/four.png" class="click" id="four">
+  </div>
+
+  <div class="term">
+    <h3>Terminal</h3>
+  </div>
+
+  <div class="output">0</div>
+    <script type="text/javascript" src="assets/javascript/game.js">
+  </script>
+
+  </div>
+
+</body>
+
+</html>
